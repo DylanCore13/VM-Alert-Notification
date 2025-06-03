@@ -124,3 +124,24 @@ This project will showcase proactive IT support skills by implementing an Azure 
 ![image](https://github.com/user-attachments/assets/4e22bca8-ee56-4a30-96dd-11675f7b7cbd)
 
 
+
+
+<h2>Part 4: Test the Alert (Optional but Recommended)</h2>
+
+- Log into your VM via RDP.
+- Generate CPU Load:
+- Windows VM:
+- Open Task Manager (Ctrl+Shift+Esc).
+- Go to the "Performance" tab and watch the CPU.
+- Open multiple applications (e.g., a few browser tabs, Notepad, Calculator, even Windows Media Player).
+- You can also run a simple CPU-intensive command in Command Prompt (e.g., cmd /c "for /l %i in (1,0,2) do @echo %i" which creates an infinite loop, or search for "CPU stress test tool" if you want something more aggressive for a few minutes).
+- Linux VM (if you used one):
+- Connect via SSH.
+- Install stress-ng: sudo apt install stress-ng
+- Run a stress test: stress-ng --cpu 4 --timeout 60s (stresses 4 CPUs for 60 seconds). Adjust --cpu to your VM's core count.
+- Observe Alert:
+- After a few minutes of high CPU, check your email inbox (the one you configured in the Action Group).
+- You should receive an email notification from Azure Monitor about the "High CPU Alert - HelpDeskVM."
+- Take a screenshot of this email!
+- Stop CPU Load: Close the applications or commands that were stressing the CPU. Your CPU utilization should drop, and after a few minutes, you might receive a "Resolved" alert notification.
+
