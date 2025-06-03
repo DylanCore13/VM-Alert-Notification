@@ -129,16 +129,28 @@ This project will showcase proactive IT support skills by implementing an Azure 
 <h2>Part 4: Test the Alert (Optional but Recommended)</h2>
 
 - Log into your VM via RDP.
-- Generate CPU Load:
-- Windows VM:
-- Open Task Manager (Ctrl+Shift+Esc).
-- Go to the "Performance" tab and watch the CPU.
-- Open multiple applications (e.g., a few browser tabs, Notepad, Calculator, even Windows Media Player).
-- You can also run a simple CPU-intensive command in Command Prompt (e.g., cmd /c "for /l %i in (1,0,2) do @echo %i" which creates an infinite loop, or search for "CPU stress test tool" if you want something more aggressive for a few minutes).
+
+![image](https://github.com/user-attachments/assets/457dca1e-6644-4f86-a2b1-5f19d3e1db8d)
+
+
+<h2>Generate CPU Load</h2>
+   <h3>- Goal: Intentionally make your VM's CPU utilization go above the 80% threshold you set.</h3>
+- For Windows VM:
+- Open Task Manager (Ctrl + Shift + Esc). Go to the "Performance" tab and observe the CPU graph.
+- Open several applications simultaneously (e.g., multiple browser tabs, a few Notepad instances, Calculator, Paint, etc.).
+- For a more consistent load, you can run a simple, harmless CPU-intensive command in Command Prompt. Type cmd in the Windows search bar, open Command Prompt, then type (and press Enter):
+
+for /l %i in (1,0,2) do @echo %i
+
+This command will create an infinite loop, driving up your CPU. Make sure to close this Command Prompt window once you've triggered the alert!
+
+
 - Linux VM (if you used one):
 - Connect via SSH.
 - Install stress-ng: sudo apt install stress-ng
 - Run a stress test: stress-ng --cpu 4 --timeout 60s (stresses 4 CPUs for 60 seconds). Adjust --cpu to your VM's core count.
+
+  
 - Observe Alert:
 - After a few minutes of high CPU, check your email inbox (the one you configured in the Action Group).
 - You should receive an email notification from Azure Monitor about the "High CPU Alert - HelpDeskVM."
