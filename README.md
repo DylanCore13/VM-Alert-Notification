@@ -84,6 +84,10 @@ This project will showcase proactive IT support skills by implementing an Azure 
 
   
 - Scope Tab: Your VM should already be selected. Click "Next: Condition >".
+
+![image](https://github.com/user-attachments/assets/50ac5fa6-30a0-4460-84dd-82128c5ce05e)
+
+
 - Condition Tab (Define the alert logic):
 - Click "+ Add condition".
 - Signal name: Search for CPU Utilization and select it.
