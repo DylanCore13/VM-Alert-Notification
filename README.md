@@ -187,11 +187,5 @@ Final Critical Clean Up Steps (DO NOT FORGET!):
 
 To ensure you don't incur unexpected Azure costs:
 
-- Deallocate your VM: In the Azure Portal, go to your HelpDeskVM and click the "Stop" button at the top. This will deallocate the VM and stop billing for compute resources.
-- Delete the Alert Rule and Action Group (Optional, but good for cleanliness):
-- Go to "Monitor" -> "Alerts" -> "Alert rules" -> Select your High CPU Alert - HelpDeskVM -> Click "Delete".
-- Go to "Monitor" -> "Action groups" -> Select your VMPerformanceAlerts -> Click "Delete".
-- Delete the Resource Group (RECOMMENDED for complete cleanup):
-- Go to "Resource groups" -> select HelpDeskVMRG (or your VM's resource group) -> Click "Delete resource group".
-- Type the resource group name to confirm deletion and click "Delete". This will remove the VM, storage accounts, network interfaces, NSGs, and any other resources associated with that group.
+Clean up any resources associated with this lab!!!!!
 
