@@ -157,9 +157,10 @@ This command will create an infinite loop, driving up your CPU. Make sure to clo
 
 
 - Linux VM (if you used one):
-- Connect via SSH.
-- Install stress-ng: sudo apt install stress-ng
-- Run a stress test: stress-ng --cpu 4 --timeout 60s (stresses 4 CPUs for 60 seconds). Adjust --cpu to your VM's core count.
+  - Connect via SSH.
+  - Install stress-ng: sudo apt install stress-ng
+  - Run a stress test: stress-ng --cpu 4 --timeout 60s (stresses 4 CPUs for 60 seconds). Adjust --cpu to your VM's core count.
+
 
   
 - Observe Alert:
