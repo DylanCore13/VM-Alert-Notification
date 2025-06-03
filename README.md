@@ -165,7 +165,6 @@ This command will create an infinite loop, driving up your CPU. Make sure to clo
   
 - Observe Alert:
 - After a few minutes of high CPU, check your email inbox (the one you configured in the Action Group).
-- You should receive an email notification from Azure Monitor about the "High CPU Alert - HelpDeskVM."
-- Take a screenshot of this email!
-- Stop CPU Load: Close the applications or commands that were stressing the CPU. Your CPU utilization should drop, and after a few minutes, you might receive a "Resolved" alert notification.
+- You should receive an email notification from Azure Monitor about the "High CPU Alert - AlertVM."
+- Stop CPU Load: Close the applications or commands that were stressing the CPU. Your CPU utilization should drop, and after a few minutes, you might receive a "Resolved" alert notification!!!!
 
