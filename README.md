@@ -167,4 +167,31 @@ This command will create an infinite loop, driving up your CPU. Make sure to clo
 - After a few minutes of high CPU, check your email inbox (the one you configured in the Action Group).
 - You should receive an email notification from Azure Monitor about the "High CPU Alert - AlertVM."
 - Stop CPU Load: Close the applications or commands that were stressing the CPU. Your CPU utilization should drop, and after a few minutes, you might receive a "Resolved" alert notification!!!!
+  
+
+
+![image](https://github.com/user-attachments/assets/e20e026b-ba87-4b1d-8c6c-acd47edec061)
+
+
+![image](https://github.com/user-attachments/assets/78c04e75-ba78-4e35-946b-e8fecd8ec053)
+
+
+
+![image](https://github.com/user-attachments/assets/a19d4fb3-199d-4c33-8bd9-0034e7bd29ee)
+
+
+![image](https://github.com/user-attachments/assets/9209883e-a366-4161-9ccf-730273d5a0cb)
+
+
+Final Critical Clean Up Steps (DO NOT FORGET!):
+
+To ensure you don't incur unexpected Azure costs:
+
+- Deallocate your VM: In the Azure Portal, go to your HelpDeskVM and click the "Stop" button at the top. This will deallocate the VM and stop billing for compute resources.
+- Delete the Alert Rule and Action Group (Optional, but good for cleanliness):
+- Go to "Monitor" -> "Alerts" -> "Alert rules" -> Select your High CPU Alert - HelpDeskVM -> Click "Delete".
+- Go to "Monitor" -> "Action groups" -> Select your VMPerformanceAlerts -> Click "Delete".
+- Delete the Resource Group (RECOMMENDED for complete cleanup):
+- Go to "Resource groups" -> select HelpDeskVMRG (or your VM's resource group) -> Click "Delete resource group".
+- Type the resource group name to confirm deletion and click "Delete". This will remove the VM, storage accounts, network interfaces, NSGs, and any other resources associated with that group.
 
