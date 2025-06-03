@@ -21,3 +21,34 @@ This project will showcase proactive IT support skills by implementing an Azure 
 - Azure Monitor
 - Azure Action Groups 
 - Azure Resource Groups
+
+
+<h2>Part 1: Ensure Your Azure VM is Running</h2>
+
+- Log in to Azure Portal, then start your VM from or create a new one, new resource group and VM, same AZ
+
+![image](https://github.com/user-attachments/assets/b8f26813-f15c-4521-8eb2-3db2c093301b)
+
+
+<h2>Part 2: Create an Action Group (for Notifications)</h2>
+
+<h1>An Action Group defines who gets notified and how (email, SMS, webhook, etc.).</h1>
+
+- Create Action Group:
+- In the Azure Portal search bar, type "Action groups" and select it.
+ - Click "+ Create". Then go to Basics Tab then Project details
+- Subscription: Your subscription.
+- Resource group: The one you created 
+- Instance details:
+- Action group name: VMPerformanceAlerts
+- Display name: VM Performance Alerts
+- Click "Next: Notifications >".
+- Notifications Tab:
+- Click "+ Add notification".
+- Notification type: Email/SMS message/Push/Voice
+- Name: EmailMe
+- Email: Check "Email" and enter your personal email address.
+- Click "OK".
+- Click "Next: Actions >" (you can skip actions for this simple lab).
+- Click "Next: Review + create >", then "Create".
+
