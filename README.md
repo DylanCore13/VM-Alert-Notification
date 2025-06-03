@@ -12,6 +12,7 @@
 - Basic Performance Metric Understanding
 - Cloud VM Lifecycle Awareness
 <h2>Azure Services Used</h2>
+
 - Azure Virtual Machines 
 - Azure Monitor
 - Azure Action Groups 
