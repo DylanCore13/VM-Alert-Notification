@@ -34,21 +34,30 @@ This project will showcase proactive IT support skills by implementing an Azure 
 
 <h1>An Action Group defines who gets notified and how (email, SMS, webhook, etc.).</h1>
 
-- Create Action Group:
-- In the Azure Portal search bar, type "Action groups" and select it.
- - Click "+ Create". Then go to Basics Tab then Project details
-- Subscription: Your subscription.
-- Resource group: The one you created 
+- Navigate to Azure Monitor first:
+
+    - In the Azure Portal search bar, type "Monitor" and select "Monitor" (the service with the speedometer icon).
+      In the left-hand menu of the Monitor blade, under "Alerts", select "Action groups".
+      Create Action Group:
+
+- On the "Action groups" page, click "+ Create".
+- Basics Tab:
+- Project details:
+- Subscription: Choose your Azure subscription.
+- Resource group: Select HelpDeskVMRG (or the resource group where your VM is located).
 - Instance details:
-- Action group name: VMPerformanceAlerts
-- Display name: VM Performance Alerts
+- Action group name: VMPerformanceAlerts (This must be unique within the resource group).
+- Display name: VM Performance Alerts (This is the friendly name you'll see).
 - Click "Next: Notifications >".
 - Notifications Tab:
 - Click "+ Add notification".
-- Notification type: Email/SMS message/Push/Voice
-- Name: EmailMe
+- Notification type: Select Email/SMS message/Push/Voice
+- Name: EmailMe (or a descriptive name for this notification)
 - Email: Check "Email" and enter your personal email address.
 - Click "OK".
-- Click "Next: Actions >" (you can skip actions for this simple lab).
+- Click "Next: Actions >" (you can skip this for this simple lab, it's for triggering automated tasks like Azure Functions or Logic Apps).
 - Click "Next: Review + create >", then "Create".
+
+
+![image](https://github.com/user-attachments/assets/44ba932b-725c-4f0c-8643-2615220ac654)
 
