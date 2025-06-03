@@ -67,3 +67,42 @@ This project will showcase proactive IT support skills by implementing an Azure 
 
 ![image](https://github.com/user-attachments/assets/6e0d701a-7a9b-4f69-82a8-adb27ebdf1c4)
 
+
+
+<h2>Part 3: Create an Alert Rule for VM Performance</h2>
+
+ - Now, you'll create the actual alert that uses the action group.
+
+- Navigate to your VM:
+- In the Azure Portal search bar, type "Virtual machines" and select it.
+- Click on your HelpDeskVM (or the name of your VM).
+- Create Alert Rule:
+- In the left-hand menu, under "Monitoring", click "Alerts".
+- Click "+ Create" -> "Alert rule".
+- Scope Tab: Your VM should already be selected. Click "Next: Condition >".
+- Condition Tab (Define the alert logic):
+- Click "+ Add condition".
+- Signal name: Search for CPU Utilization and select it.
+- Logic:
+- Threshold: Static
+- Operator: Greater than
+- Aggregation type: Average
+- Threshold value: 80 (This means trigger if average CPU goes above 80%).
+- Unit: %
+- Check frequency: Every 1 minute
+- Period: Over the last 5 minutes (This means average CPU over the last 5 mins).
+- Click "Done".
+- Click "Next: Actions >".
+- Actions Tab (Link to your Action Group):
+- Select "Select action groups".
+- Check the VMPerformanceAlerts action group you just created.
+- Click "Select".
+- Click "Next: Details >".
+- Details Tab:
+- Alert rule name: High CPU Alert - HelpDeskVM
+- Description: Alerts when HelpDeskVM CPU utilization exceeds 80% for 5 minutes.
+- Severity: Sev 2 (High) (Help desk would typically act on this).
+- Enable alert rule upon creation: Leave checked.
+- Click "Next: Tags >" (optional).
+- Click "Next: Review + create >", then "Create".
+
