@@ -65,4 +65,5 @@ This project will showcase proactive IT support skills by implementing an Azure 
 - Click "Next: Review + create >", then "Create".
 
 
+![image](https://github.com/user-attachments/assets/6e0d701a-7a9b-4f69-82a8-adb27ebdf1c4)
 
