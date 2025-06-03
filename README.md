@@ -90,21 +90,28 @@ This project will showcase proactive IT support skills by implementing an Azure 
 
 - Condition Tab (Define the alert logic):
 - Click "+ Add condition".
-- Signal name: Search for CPU Utilization and select it.
+- Signal name: Search for Percentage CPU and select it.
 - Logic:
 - Threshold: Static
-- Operator: Greater than
+- Operator(Value is): Greater than
 - Aggregation type: Average
 - Threshold value: 80 (This means trigger if average CPU goes above 80%).
 - Unit: %
 - Check frequency: Every 1 minute
 - Period: Over the last 5 minutes (This means average CPU over the last 5 mins).
 - Click "Done".
+
+  ![image](https://github.com/user-attachments/assets/f67ff85c-225c-4ac8-9caa-2fff734d283d)
+
 - Click "Next: Actions >".
 - Actions Tab (Link to your Action Group):
 - Select "Select action groups".
 - Check the VMPerformanceAlerts action group you just created.
 - Click "Select".
+
+
+  ![image](https://github.com/user-attachments/assets/f401d20f-5001-45a5-87e2-1f6ea3121480)
+
 - Click "Next: Details >".
 - Details Tab:
 - Alert rule name: High CPU Alert - HelpDeskVM
@@ -113,4 +120,7 @@ This project will showcase proactive IT support skills by implementing an Azure 
 - Enable alert rule upon creation: Leave checked.
 - Click "Next: Tags >" (optional).
 - Click "Next: Review + create >", then "Create".
+
+![image](https://github.com/user-attachments/assets/4e22bca8-ee56-4a30-96dd-11675f7b7cbd)
+
 
