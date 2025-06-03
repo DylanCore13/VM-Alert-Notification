@@ -25,7 +25,7 @@ This project will showcase proactive IT support skills by implementing an Azure 
 
 <h2>Part 1: Ensure Your Azure VM is Running</h2>
 
-- Log in to Azure Portal, then start your VM from a previous lab/activity or create a new one, new resource group and VM, both in same AZ
+- Log in to Azure Portal, then start your VM from a previous lab/activity or create a new one, new resource group and VM, both in same AZ/location
 
 ![image](https://github.com/user-attachments/assets/b8f26813-f15c-4521-8eb2-3db2c093301b)
 
