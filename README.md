@@ -71,7 +71,7 @@ This project will showcase proactive IT support skills by implementing an Azure 
 
 <h2>Part 3: Create an Alert Rule for VM Performance</h2>
 
- - Now, you'll create the actual alert that uses the action group.
+<h3>Now, you'll create the actual alert that uses the action group.</h3>
 
 - Navigate to your VM:
 - In the Azure Portal search bar, type "Virtual machines" and select it.
