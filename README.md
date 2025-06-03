@@ -134,15 +134,26 @@ This project will showcase proactive IT support skills by implementing an Azure 
 
 
 <h2>Generate CPU Load</h2>
+
    <h3>- Goal: Intentionally make your VM's CPU utilization go above the 80% threshold you set.</h3>
+   
 - For Windows VM:
+
 - Open Task Manager (Ctrl + Shift + Esc). Go to the "Performance" tab and observe the CPU graph.
+
+  ![image](https://github.com/user-attachments/assets/dfb6a0a7-914f-4029-82e5-9b42c789bdc7)
+
+  
 - Open several applications simultaneously (e.g., multiple browser tabs, a few Notepad instances, Calculator, Paint, etc.).
+  
 - For a more consistent load, you can run a simple, harmless CPU-intensive command in Command Prompt. Type cmd in the Windows search bar, open Command Prompt, then type (and press Enter):
 
 for /l %i in (1,0,2) do @echo %i
 
 This command will create an infinite loop, driving up your CPU. Make sure to close this Command Prompt window once you've triggered the alert!
+
+![image](https://github.com/user-attachments/assets/de1412b3-42ee-410f-bd6e-41aa3434cff3)
+
 
 
 - Linux VM (if you used one):
