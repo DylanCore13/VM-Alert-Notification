@@ -79,6 +79,10 @@ This project will showcase proactive IT support skills by implementing an Azure 
 - Create Alert Rule:
 - In the left-hand menu, under "Monitoring", click "Alerts".
 - Click "+ Create" -> "Alert rule".
+
+![image](https://github.com/user-attachments/assets/8c16fe9a-7e0e-418b-9ccd-417db25a54fe)
+
+  
 - Scope Tab: Your VM should already be selected. Click "Next: Condition >".
 - Condition Tab (Define the alert logic):
 - Click "+ Add condition".
