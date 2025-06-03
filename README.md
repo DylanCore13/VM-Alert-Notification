@@ -50,6 +50,10 @@ This project will showcase proactive IT support skills by implementing an Azure 
 - Instance details:
 - Action group name: VMPerformanceAlerts (This must be unique within the resource group).
 - Display name: VM Performance Alerts (This is the friendly name you'll see).
+
+![image](https://github.com/user-attachments/assets/a685ff55-f797-4724-b28a-515b8defc37b)
+
+
 - Click "Next: Notifications >".
 - Notifications Tab:
 - Click "+ Add notification".
