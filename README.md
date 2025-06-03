@@ -37,8 +37,10 @@ This project will showcase proactive IT support skills by implementing an Azure 
 - Navigate to Azure Monitor first:
 
     - In the Azure Portal search bar, type "Monitor" and select "Monitor" (the service with the speedometer icon).
-      In the left-hand menu of the Monitor blade, under "Alerts", select "Action groups".
-      Create Action Group:
+      - In the left-hand menu of the Monitor blade, under "Alerts", select "Action groups".
+        - Create Action Group:
+
+      ![image](https://github.com/user-attachments/assets/44ba932b-725c-4f0c-8643-2615220ac654)
 
 - On the "Action groups" page, click "+ Create".
 - Basics Tab:
@@ -59,5 +61,4 @@ This project will showcase proactive IT support skills by implementing an Azure 
 - Click "Next: Review + create >", then "Create".
 
 
-![image](https://github.com/user-attachments/assets/44ba932b-725c-4f0c-8643-2615220ac654)
 
